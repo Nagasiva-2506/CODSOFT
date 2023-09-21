@@ -1,5 +1,5 @@
-import java.util.Random;
-import java.util.Scanner;
+import java.util.Random; //Builtin class that generates random number 
+import java.util.Scanner;//built in class that takes input from the user
 
 public class NagaNumberGuessingGame {
     public static void main(String[] args) {
@@ -34,7 +34,7 @@ public class NagaNumberGuessingGame {
                         System.out.println("Too high! Try a lower number.");
                     }
 
-                    attempts++;
+                    attempts++;//increment by one 
                     int remainingAttempts = maxAttempts - attempts;
                     System.out.println("You have " + remainingAttempts + " attempts remaining.");
 
