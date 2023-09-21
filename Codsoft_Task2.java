@@ -1,22 +1,22 @@
 import java.util.Scanner;
-class Percentage
+class Percentage//sub class 
 {
 	float per(int totMarks)
 	{
 		float p=(float)totMarks/6;
-		return p;
+		return p;//returning the percentage
 	}
 }
-class Codsoft_Task2
+class Codsoft_Task2//main class
 {
 	public static void main(String args[])
 	{
 		Scanner s =new Scanner(System.in);
-		int i=1,totMarks=0;
+		int i=1,totMarks=0;//begginning with total is zero
 		while(i<=6)
 		{
 			System.out.println("Enter the marks of sub"+i);
-			int sub=s.nextInt();
+			int sub=s.nextInt();//asking to enter the marks
 			if(sub<0 && sub>100)
 			{
 				System.out.println("Invalid marks");
@@ -49,7 +49,7 @@ class Codsoft_Task2
 			} 
 			else 
 			{
-            grade = "F";
+           			 grade = "F";
 			}
 		System.out.println("Grade: " + grade);
 		s.close();
